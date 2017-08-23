@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Lobster|Tangerine');
+
+		body{
+			background-color: #333;
+			margin: auto;
+		}
+		h1{
+			color: #FFF;
+			font-family: 'Tangerine', cursive;
+			text-align: center;
+			letter-spacing: 0.04em;
+			margin-top: 8px;
+			margin-bottom: 8px;
+		}
+		#container{
+			margin: 70px auto;
+			width:200px;
+			border: 1px solid #FFF;
+			background-color: rgb(56, 87, 35);
+		}
+		#display{
+			height: 30px;
+			width: 180px;
+			background-color: #FFF;
+			font-size: 16px;
+			margin-top: 5px;
+			margin-bottom: 4px;
+			margin-left: 10px;
+
+
+
+		}
+		#keys{
+			/*FONT*/
+			text-align: center;
+			width: 180px;
+			margin: auto;
+			margin-bottom: 8px;
+		}
+		input {
+			color: #FFF;
+			font-size: 14px;
+			width:40px;
+			height: 40px;
+			background-color: rgb(79, 35, 252);
+			border: .5px solid #FFF;
+			margin-bottom: 3px;
+
+		}
+		#keyEqual{
+			background-color: rgb(251, 106, 106);
+			width:172px;
+			margin-right: 3px;
+
+		}
+		footer{
+			border-top: 1px solid #FFF;
+			border-bottom: 1px solid #FFF;
+			background-color: rgb(56, 87, 35);
+			max-height: 55px;
+			padding: 5px 0 8px 0;
+			margin: 0;
+}
+p{
+	margin: 0;
+
+}
+
+	</style>
+</head>
+<body>
+<div id="container">
+<h1>Calculator</h1>
+<h2 id="display"></h2>
+<br>
+<div id="keys">
+<input type="button" id="key7" value="7"/>
+<input type="button" id="key8" value="8"/>
+<input type="button" id="key9" value="9"/>
+<input type="button" class="operator" id="keyDivide" value="/"/>
+<br>
+
+<input type="button" id="key4" value="4"/>
+<input type="button" id="key5" value="5"/>
+<input type="button" id="key6" value="6"/>
+<input type="button" class="operator" id="keyMul" value="*"/>
+<br>
+
+<input type="button" id="key1" value="1"/>
+<input type="button" id="key2" value="2"/>
+<input type="button" id="key3" value="3"/>
+<input type="button" class="operator" id="keyPlus" value="+"/>
+<br>
+
+<input type="button" id="keyDel" value="del"/>
+<input type="button" id="key0" value="0"/>
+<input type="button" id="keyCancel" value="C"/>
+<input type="button" class="operator" id="keyMinus" value="-"/>
+<br>
+<input type="button" id="keyEqual" class="operator" value="ENTER"/>
+</div>
+
+
+</div>
+
+	<!--
+<input type="button" id='btn1' value='1'/>
+    <input type="button" id='btn2' value='2'/>
+    <input type="button" id='btn3' value='3'/>
+    <input type="button" class='operator' id='btnPlus' value='+'/>
+    <br />
+    <input type="button" id='btn4' value='4'/>
+    <input type="button" id='btn5' value='5'/>
+    <input type="button" id='btn6' value='6'/>
+    <input type="button" class='operator' id='btnMinus' value='-'/>
+    <br />
+    <input type="button" id='btn7' value='7'/>
+    <input type="button" id='btn8' value='8'/>
+    <input type="button" id='btn9' value='9'/>
+    <input type="button" class='operator' id='btnMult' value='x'/>
+    <br />
+    <input type="button" id='clear' value='c'/>
+    <input type="button" id='btn0' value='0'/>
+    <input type="button" id='btnEquals' value='='/>
+    <input type="button" id='btnDivide' class='operator' value='/'/>
+</div>
+-->
+
+<footer>
+
+  <p> Designed by Vijay with <i class="fa fa-heart"></i></p>
+
+</footer>
+</body>
+</html>
