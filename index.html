@@ -4,11 +4,15 @@
 	<title>Calculator</title>
 	<style type="text/css">
 		@import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Lobster|Tangerine');
-
-		body{
+		@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+		
+		html, body{
 			background-color: #333;
-			margin: auto;
+			margin:0;
+			padding: 0;
+			height: 100%;
 		}
+		
 		h1{
 			color: #FFF;
 			font-family: 'Tangerine', cursive;
@@ -22,6 +26,7 @@
 			width:200px;
 			border: 1px solid #FFF;
 			background-color: rgb(56, 87, 35);
+			position: relative;
 		}
 		#display{
 			height: 30px;
@@ -58,22 +63,35 @@
 			margin-right: 3px;
 
 		}
-		footer{
-			border-top: 1px solid #FFF;
-			border-bottom: 1px solid #FFF;
-			background-color: rgb(56, 87, 35);
-			max-height: 55px;
-			padding: 5px 0 8px 0;
-			margin: 0;
+		#footer {
+    position: fixed;
+    bottom: 0;
+    margin: 0;
+	border-top: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	background-color: rgb(56, 87, 35);
+	max-height: 55px;
+	width: 100%;
+	
+
+			
 }
 p{
 	margin: 0;
+	color: #FFF;
+	text-align: center;
+	font-family: 'Dancing Script', cursive;
+	letter-spacing: 0.03em;
 
+}
+.fa-heart{
+	color: rgb(192, 0, 0);
 }
 
 	</style>
 </head>
 <body>
+
 <div id="container">
 <h1>Calculator</h1>
 <h2 id="display"></h2>
@@ -107,34 +125,13 @@ p{
 
 
 </div>
-
-	<!--
-<input type="button" id='btn1' value='1'/>
-    <input type="button" id='btn2' value='2'/>
-    <input type="button" id='btn3' value='3'/>
-    <input type="button" class='operator' id='btnPlus' value='+'/>
-    <br />
-    <input type="button" id='btn4' value='4'/>
-    <input type="button" id='btn5' value='5'/>
-    <input type="button" id='btn6' value='6'/>
-    <input type="button" class='operator' id='btnMinus' value='-'/>
-    <br />
-    <input type="button" id='btn7' value='7'/>
-    <input type="button" id='btn8' value='8'/>
-    <input type="button" id='btn9' value='9'/>
-    <input type="button" class='operator' id='btnMult' value='x'/>
-    <br />
-    <input type="button" id='clear' value='c'/>
-    <input type="button" id='btn0' value='0'/>
-    <input type="button" id='btnEquals' value='='/>
-    <input type="button" id='btnDivide' class='operator' value='/'/>
-</div>
--->
-
-<footer>
+<footer id="footer">
 
   <p> Designed by Vijay with <i class="fa fa-heart"></i></p>
 
 </footer>
+
+
+
 </body>
 </html>
